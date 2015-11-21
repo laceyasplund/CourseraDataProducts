@@ -1,0 +1,53 @@
+---
+title       : Media Efficency Ratio Shiny App
+subtitle    : Coursera Data Products Project
+author      : 
+job         : 
+framework   : revealjs       # {io2012, html5slides, shower, dzslides, ...}
+revealjs: {theme: solarized, transition: cube}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## Media Efficiency Ratio Shiny App
+### Coursera Data Products Project
+#### November 21, 2015
+
+--- .class #id 
+
+## What is Media Efficiency Ratio?
+Media Efficiency Ratio (MER) is the return on investment of media Spend in a media campaign.
+
+```
+MER = Profit/Spend
+```
+
+--- .class #id
+## Why is MER Important
+
+When chosing to start a media campaign, whether it be television, radio, digital, or print you want to make sure you are getting a good return on your media spend. An MER of 1.0 is break even. Anything above a 1.0 you are receiving a return on your media spend and therefore the media is having a positive impact on your profits. Type in your expected profit and spend in dollars and this tool will tell you the Media Efficiency Ratio.
+
+--- .class #id
+## Example
+
+Let's do a quick example. Say you work for a TV ad agency. Your client received profits of $250,000 during a week that your company aired $100,000 worth of TV media. What would your MER be?
+
+```r
+Profit <- 250000
+Spend <- 100000
+MER <- Profit/Spend
+MER
+```
+
+```
+## [1] 2.5
+```
+
+---  .class #id
+## Shiny App
+ The Shiny App I've developed gives the power to the user to enter in different levels of profits and spends in order to calculate the Media Efficiency Ratio of the campaign. Likewise this tool can be used after the campaign begins to confirm the MER is meeting or exceeding the set goal.
+
+

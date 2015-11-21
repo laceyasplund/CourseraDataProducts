@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Media Efficency Ratio Shiny App</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="stylesheet" href="libraries/frameworks/revealjs/css/reveal.min.css">
+  <link rel="stylesheet" href="libraries/frameworks/revealjs/css/theme/solarized.css" id="theme">
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" id="theme">
+  <!--[if lt IE 9]>
+  <script src="lib/js/html5shiv.js"></script>
+  <![endif]-->  <link rel="stylesheet" href = "assets/css/ribbons.css">
+
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section class='' data-state='' id='slide-1'>
+  <h2>Media Efficiency Ratio Shiny App</h2>
+  <h3>Coursera Data Products Project</h3>
+
+<h4>November 21, 2015</h4>
+
+</section>
+<section class='class' data-state='' id='id'>
+  <h2>What is Media Efficiency Ratio?</h2>
+  <p>Media Efficiency Ratio (MER) is the return on investment of media Spend in a media campaign.</p>
+
+<pre><code>MER = Profit/Spend
+</code></pre>
+
+</section>
+<section class='class' data-state='' id='id'>
+  <h2>Why is MER Important</h2>
+  <p>When chosing to start a media campaign, whether it be television, radio, digital, or print you want to make sure you are getting a good return on your media spend. An MER of 1.0 is break even. Anything above a 1.0 you are receiving a return on your media spend and therefore the media is having a positive impact on your profits. Type in your expected profit and spend in dollars and this tool will tell you the Media Efficiency Ratio.</p>
+
+</section>
+<section class='class' data-state='' id='id'>
+  <h2>Example</h2>
+  <p>Let&#39;s do a quick example. Say you work for a TV ad agency. Your client received profits of $250,000 during a week that your company aired $100,000 worth of TV media. What would your MER be?</p>
+
+<pre><code class="r">Profit &lt;- 250000
+Spend &lt;- 100000
+MER &lt;- Profit/Spend
+MER
+</code></pre>
+
+<pre><code>## [1] 2.5
+</code></pre>
+
+</section>
+<section class='class' data-state='' id='id'>
+  <h2>Shiny App</h2>
+  <p>The Shiny App I&#39;ve developed gives the power to the user to enter in different levels of profits and spends in order to calculate the Media Efficiency Ratio of the campaign. Likewise this tool can be used after the campaign begins to confirm the MER is meeting or exceeding the set goal.</p>
+
+</section>
+    </div>
+  </div>
+</body>
+  <script src="libraries/frameworks/revealjs/lib/js/head.min.js"></script>
+  <script src="libraries/frameworks/revealjs/js/reveal.min.js"></script>
+  <script>
+  // Full list of configuration options available here:
+  // https://github.com/hakimel/reveal.js#configuration
+  Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: true,
+    theme: Reveal.getQueryHash().theme || 'solarized', 
+    transition: Reveal.getQueryHash().transition || 'cube', 
+    dependencies: [
+    // Cross-browser shim that fully implements classList -
+    // https://github.com/eligrey/classList.js/
+      { src: 'libraries/frameworks/revealjs/lib/js/classList.js', condition: function() { return !document.body.classList;}},
+      // Zoom in and out with Alt+click
+      { src: 'libraries/frameworks/revealjs/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+      // Speaker notes
+      { src: 'libraries/frameworks/revealjs/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+      // Remote control your reveal.js presentation using a touch device
+      //{ src: 'libraries/frameworks/revealjs/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+      ]
+  });
+  </script>  <!-- LOAD HIGHLIGHTER JS FILES -->
+<script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<!-- DONE LOADING HIGHLIGHTER JS FILES -->
+ 
+
+</html>
